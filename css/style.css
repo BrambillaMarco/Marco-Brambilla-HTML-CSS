@@ -3,3 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
+.navbar li {
+  border-left: 1px solid black;
+}
+
+.description {
+  margin-top: 100px;
+}
