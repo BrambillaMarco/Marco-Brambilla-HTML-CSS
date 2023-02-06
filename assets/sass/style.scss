@@ -8,6 +8,45 @@
     border-left: 1px solid rgba($color: #000000, $alpha: 1.0);
 }
 
-.description{
+.typewriter{
     margin-top: 100px;
+    width: 300px;
 }
+
+.navbar-toggler:hover{
+    border: #7f7d7d 1px solid;
+}
+
+.typewriter span {
+    color: #00004d;
+}
+
+body{
+    background-color: #d3d3f0;
+}
+
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */ 
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .07em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    font-size: larger;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
