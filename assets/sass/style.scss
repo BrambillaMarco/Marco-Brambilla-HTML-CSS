@@ -57,6 +57,30 @@ header{
     margin: auto;
 }
 
+.about-me{
+    background-color: rgba($color: #a9fcb7, $alpha: 1.0);
+}
+
+.container-journey-image{
+    width: 180px;
+    height: auto;
+    border: 1px red solid;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .journey-list{
+        width: 720px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .container-journey-image{
+        display: none !important;
+    }
+}
+
 
 @media only screen and (max-width: 575px) {
     .descrizione h1, p{
