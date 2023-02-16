@@ -8,9 +8,13 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" class="rel">
   <link rel="stylesheet" href="css/style.css" class="rel">
 </head>
+
+
 <body>
+
+  <!--Bootstrap 5 navbar-->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3 fixed-top">
-    <div class="container-sm">
+    <div class="container-sm" >
       <a class="navbar-brand" href="#">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,13 +26,13 @@
             <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#">About Me</a>
+            <a class="nav-link mx-2" href="#myjourney">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#">My Skills</a>
+            <a class="nav-link mx-2" href="#myskill">My Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="#">Contact</a>
+            <a class="nav-link mx-2" href="#contactme">Contact</a>
           </li>
           
         </ul>
@@ -36,10 +40,10 @@
     </div>
     </nav>  
 
-
+    <!--HEADER/PRESENTATION-->
     <header class="container-sm">
       <div class="row align-items-center ms-4">
-          <div class="col-12 col-sm-6 descrizione pb-5 border-bottom border-1 border-dark">
+          <div class="col-sm-6 descrizione pb-5 border-bottom border-1 border-dark">
             <h1 class="name">
               Hi! I'm <span class="text-success">Marco Brambilla</span>.
             </h1>
@@ -48,61 +52,196 @@
               I love to create beautiful and functional websites.
             </p>
             <div class="header-social d-flex justify-content-around pt-3">
-              <a class="btn border border-2 border-dark social-button" href="#" role="button">
+              <a class="btn border border-2 border-dark social-button" href="https://github.com/BrambillaMarco" target="_blank" role="button">
                 <img src="assets/images/icons8-github.svg" class="img-fluid">
               </a>
-              <a class="btn border border-2 border-dark social-button" href="#" role="button">
+              <a class="btn border border-2 border-dark social-button" href="https://www.linkedin.com/in/marco-brambilla-155745262/" target="_blank" role="button">
                 <img src="assets/images/icons8-linkedin-circled.svg" class="img-fluid">
               </a>
-              <a class="btn border border-2 border-dark social-button" href="#" role="button">
+              <a class="btn border border-2 border-dark social-button" href="https://twitter.com/_MarcoBrambilla" target="_blank" role="button">
                 <img src="assets/images/icons8-twitter.svg" class="img-fluid">
               </a>
             </div>
           </div>
-          <div class="col-12 col-sm-1"></div>
-          <div class="col-12 col-sm-5">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5">
 
               <div class="d-flex justify-content-center">
                 <img src="assets/images/foto-prova-profilo.png" class="img-fluid profile-image shadow my-4" alt="">
             </div>
-              
           </div>
       </div>
   </header>
 
-<div class="about-me my-5 py-1 container-fluid">
-  <section class="container-sm about-me ms-4">
-    <h1 class="mt-4 mb-4 border-bottom border-1 border-dark pb-3">My Journey</h1>
-    <ul class="journey-list d-inline-block">
-      <li><img src="assets/images/baby-icon.png" class="img-fluid"> - I was born on March 18, 2000, in Milan</li>
-      <li><img src="assets/images/bookshelf-icon.png" class="img-fluid"> - I graduated from the scientific high school "IIS Iris Versari"</li>
-      <li><img src="assets/images/graduation-icon.png" class="img-fluid"> - I'm studying <span>computer science</span> at Milano-Bicocca University</li>
-      <li><img src="assets/images/computer-icon.png" class="img-fluid"> - I'm practicing everyday at <a href="https://www.start2impact.it/">Start2Impact</a> on concrete projects</li>
-      <li><img src="assets/images/joystick-icon.png" class="img-fluid"> - When I'm not working I enjoy reading books, playing videogames and being in nature  </li>
-    </ul>
-    <div class="container-journey-image d-inline-block">
-      <img src="assets/images/journey-image.jpg" class="img-fluid journey-image">
+
+
+
+  <!--My Journey section-->
+  <a id="myjourney"></a>
+  <div class="background-greenblue mt-5 py-5 container-fluid">
+    <section class="mx-5 ">
+      <div class="d-flex justify-content-center">
+        <h1 class="mt-4 mb-4 border-bottom border-1 border-dark pb-3">My Journey</h1>
+      </div>
+      <div class="d-flex justify-content-around">
+        <ul class="journey-list d-inline-block mt-4">
+          <li class="border-bottom border-1 border-dark pb-2"><img src="assets/images/baby-icon.png" class="img-fluid"> I was born on March 18, 2000, in Milan</li>
+          <li class="mt-2 border-bottom border-1 border-dark pb-2"><img src="assets/images/bookshelf-icon.png" class="img-fluid"> I graduated from the scientific high school "IIS Iris Versari" in Cesano Maderno</li>
+          <li class="mt-2 border-bottom border-1 border-dark pb-2"><img src="assets/images/graduation-icon.png" class="img-fluid"> I'm studying <span>computer science</span> at Milano-Bicocca University</li>
+          <li class="mt-2 border-bottom border-1 border-dark pb-2"><img src="assets/images/computer-icon.png" class="img-fluid"> I'm practicing everyday at <a href="https://www.start2impact.it/" class="link-dark">Start2Impact</a> on concrete projects</li>
+          <li class="mt-2"><img src="assets/images/joystick-icon.png" class="img-fluid"> When I'm not working I enjoy reading books, playing videogames and being in nature  </li>
+        </ul>
+        <div class="container-journey-image d-inline-block">
+          <img src="assets/images/journeyy.png" class="img-fluid">
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+<!--My Skills section-->
+<a id="myskill"></a>
+<div class="container-fluid background-greenblue pt-5">
+  <div class="container-sm pb-5 border-top border-1 border-dark pt-5">
+    <div class="d-flex justify-content-center">
+      <h1 class="mt-4 mb-4 border-bottom border-1 border-dark pb-3">My Skills</h1>
     </div>
-  </section>
+    <div class="row mt-5">
+      <!--"HTML/CSS" card-->
+        <div class="col-xl-3 col-lg-6">
+            <div class="card l-bg-cherry">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">HTML & CSS</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        
+                        <div class="col-4 text-right">
+                            <span>100% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Bootstrap" card-->
+        <div class="col-xl-3 col-lg-6">
+            <div class="card l-bg-blue-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">Bootstrap</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-4 text-right">
+                            <span>100% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-green" role="progressbar" data-width="100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Javascript" card-->
+        <div class="col-xl-3 col-lg-6">
+            <div class="card l-bg-green-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-ticket-alt"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">JavaScript</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-4 text-right">
+                            <span>10% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-orange" role="progressbar" data-width="10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--"Java" card-->
+        <div class="col-xl-3 col-lg-6">
+            <div class="card l-bg-orange-dark">
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="mb-4">
+                        <h5 class="card-title mb-0">Java</h5>
+                    </div>
+                    <div class="row align-items-center mb-2 d-flex">
+                        <div class="col-4 text-right">
+                            <span>40% <i class="fa fa-arrow-up"></i></span>
+                        </div>
+                    </div>
+                    <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                        <div class="progress-bar l-bg-cyan" role="progressbar" data-width="40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center my-5">...and more</h2>
+</div>  
 </div>
 
 
 
+<!--Contact me section-->
+<a id="contactme"></a>
+<div class="container-contact container-sm py-5">
+  <div class="d-flex justify-content-center">
+    <h1 class="mt-4 mb-4 border-bottom border-1 border-dark pb-3">Contact me</h1>
+  </div>
+  <!-- Bootstrap 5 form -->
+  <form id="contactForm">
 
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label " for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+      <!--Ho aggiunto l'avviso d'errore quando non si inserisce alcun carattere,ma non sembra funzionare e non capisco il motivo-->
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
 
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+    </div>
 
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+    </div>
 
+    <!-- Form submissions success message -->
+    <div class="d-none" id="submitSuccessMessage">
+      <div class="text-center mb-3">Form submission successful!</div>
+    </div>
 
+    <!-- Form submissions error message -->
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error sending message!</div>
+    </div>
 
+    <!-- Form submit button -->
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
 
-
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
